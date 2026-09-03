@@ -1,0 +1,24 @@
+name: Feature Request
+description: เสนอฟีเจอร์ใหม่หรือปรับปรุง
+labels: ["feature", "triage"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: "ปัญหาที่ต้องการแก้ไข"
+      description: "ปัญหาคืออะไร? ทำไมต้องมีฟีเจอร์นี้?"
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: "แนวทางที่ต้องการ"
+      description: "อธิบายว่าคิดว่าควรทำงานอย่างไร"
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "ทางเลือกอื่น"
+      description: "มีวิธีอื่นอีกไหม?"
+  - type: markdown
+    attributes:
+      value: "**ภาพประกอบหรือตัวอย่าง**: สามารถแนบภาพหรือลิงก์ได้เลยครับ"
