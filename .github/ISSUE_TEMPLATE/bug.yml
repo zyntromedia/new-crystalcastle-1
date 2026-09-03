@@ -1,0 +1,48 @@
+name: Bug Report
+description: รายงานปัญหาเพื่อให้ทีมแก้ไข
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: "ขอบคุณที่รายงานปัญหา 🙏 กรุณากรอกข้อมูลให้ครบถ้วน"
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to Reproduce"
+      placeholder: |
+        1. ไปที่หน้า /products
+        2. กดปุ่ม Delete
+        3. เกิดข้อผิดพลาด
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected Behavior"
+      placeholder: "ควรทำงานอย่างไร?"
+  - type: textarea
+    id: actual
+    attributes:
+      label: "Actual Behavior"
+      placeholder: "เกิดอะไรขึ้นจริง?"
+  - type: input
+    id: version
+    attributes:
+      label: "React / Next.js Version"
+      placeholder: "18.3.1 / 14.2.0"
+  - type: dropdown
+    id: browser
+    attributes:
+      label: "Browser"
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - Edge
+        - All / Not Relevant
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Error Logs / Screenshot"
+      description: "วางข้อความแจ้งเตือนหรือแนบภาพหน้าจอ"
+      render: shell
